@@ -23,7 +23,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://karalevich.com/rho.webp"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="visit" />
@@ -44,7 +44,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="view" />
@@ -68,7 +68,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://karalevich.com/rho.webp"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="visit" />
@@ -89,7 +89,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="view" />
@@ -102,7 +102,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="view" />
@@ -123,7 +123,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="view" />
@@ -136,7 +136,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="view" />
