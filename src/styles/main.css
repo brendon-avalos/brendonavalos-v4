@@ -3,6 +3,7 @@
 	--color-bg-1: #ffffff;
 	--color-text: rgba(0, 0, 0, 1);
 	--font-size: min(max(1rem, 4vw), 18px);
+	--gray-50: #f5f5f5;
 
 	/* to get the spacing unit to match the base font size */
 	--spacing-unit: min(max(1rem, 4vw), 18px);
@@ -12,8 +13,13 @@ body {
 	font-family: var(--font-body);
 	background-color: var(--color-bg-1);
 	color: var(--color-text);
-	padding: 1rem;
+	padding: 1rem 2rem;
 	font-size: var(--font-size);
+	scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 a {
@@ -21,7 +27,7 @@ a {
 }
 
 .body-1 {
-	font-size: min(max(1.5rem, 3vw), 32px);
+	font-size: min(max(1.5rem, 3vw), 30px);
 	font-weight: 300;
 }
 
@@ -29,4 +35,13 @@ a {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
 	gap: 20px;
+}
+
+.underline {
+	border-bottom: 1px solid currentColor;
+	padding-bottom: calc(var(--font-size) / 8);
+}
+
+.project-container-spacing {
+	margin-bottom: calc(var(--spacing-unit) * 12);
 }

@@ -1,38 +1,189 @@
 <script>
 	import '../styles/all.css';
+	import ProjectBlock from '../lib/ProjectBlock.svelte';
 </script>
 
 <div class="container">
 	<div class="experience">Experience</div>
 </div>
 
-<div class="container">
+<div class="container project-container-spacing">
 	<div class="current">Currently</div>
-	<div class="body-1 narrative">
-		I am a designer at Fictive Kin. I contribute to both web & digital product projects for
-		businesses large and small. I also manage projects and develop internal processes.
+	<div class="content_container">
+		<div class="block">
+			<div class="body-1 intro">
+				I am a designer at Fictive Kin. I contribute to both web & digital product projects for
+				businesses large and small. I also manage projects and develop internal processes.
+			</div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Studio Carbon Negative</span>
+				<span slot="year">2020</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://karalevich.com/rho.webp"
+					/></svelte:fragment
+				>
+				<span slot="visit" />
+			</ProjectBlock>
+		</div>
+
+		<div class="block">
+			<div class="body-1 intro">
+				I am also starting “Office Hours”. I way to meet and help designers or new companies
+				navigate the industry. I’m happy to offer advice around process, careers, digital products,
+				and strategy.
+			</div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Office Hours</span>
+				<span slot="year">2023</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+					/></svelte:fragment
+				>
+				<span slot="view" />
+			</ProjectBlock>
+		</div>
+	</div>
+</div>
+<div class="container project-container-spacing">
+	<div class="current">Before</div>
+	<div class="content_container">
+		<div class="block">
+			<div class="body-1 intro">
+				I am a designer at Fictive Kin. I contribute to both web & digital product projects for
+				businesses large and small. I also manage projects and develop internal processes.
+			</div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Studio Carbon Negative</span>
+				<span slot="year">2020</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://karalevich.com/rho.webp"
+					/></svelte:fragment
+				>
+				<span slot="visit" />
+			</ProjectBlock>
+		</div>
+
+		<div class="block">
+			<div class="body-1 intro">
+				I am also starting “Office Hours”. I way to meet and help designers or new companies
+				navigate the industry. I’m happy to offer advice around process, careers, digital products,
+				and strategy.
+			</div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Office Hours</span>
+				<span slot="year">2023</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+					/></svelte:fragment
+				>
+				<span slot="view" />
+			</ProjectBlock>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Office Hours</span>
+				<span slot="year">2023</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+					/></svelte:fragment
+				>
+				<span slot="view" />
+			</ProjectBlock>
+		</div>
+
+		<div class="block">
+			<div class="body-1 intro">
+				I am also starting “Office Hours”. I way to meet and help designers or new companies
+				navigate the industry. I’m happy to offer advice around process, careers, digital products,
+				and strategy.
+			</div>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Office Hours</span>
+				<span slot="year">2023</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+					/></svelte:fragment
+				>
+				<span slot="view" />
+			</ProjectBlock>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<ProjectBlock>
+				<!-- Using slots to reuse the components. The content structure for each block. -->
+				<span slot="title">Office Hours</span>
+				<span slot="year">2023</span>
+				<svelte:fragment slot="image"
+					><img
+						class="thumbnail_image_selector"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20170656/original_2630e60d367ade1868e35a9ebb73b256.jpg?1675317418?bc=0"
+					/></svelte:fragment
+				>
+				<span slot="view" />
+			</ProjectBlock>
+		</div>
 	</div>
 </div>
 
 <style>
-	.experience {
-		justify-content: center;
-		align-items: center;
-		margin-top: calc(var(--spacing-unit) * 5);
-		margin-bottom: calc(var(--spacing-unit) * 5);
-		grid-column: col-start 4 / span 2;
-	}
-	.current {
-		grid-column: col-start 1 / span 2;
+	.block {
+		display: grid;
+		gap: calc(var(--spacing-unit) * 3);
 	}
 
-	.narrative {
+	.thumbnail_image_selector {
+		width: 100%;
+		-webkit-box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
+		-moz-box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
+		box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
+	}
+	.content_container {
 		grid-column: col-start 7 / span 6;
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--spacing-unit) * 8);
 	}
 
 	@media (min-width: 1600px) {
-		.narrative {
-			grid-column: col-start 9 / span 4;
+		.content_container {
+			grid-column: col-start 8 / span 5;
 		}
+	}
+
+	.experience {
+		justify-content: center;
+		margin-top: calc(var(--spacing-unit) * 6 - 28px);
+		margin-bottom: calc(var(--spacing-unit) * 6);
+		grid-column: col-start 4 / span 2;
+		position: sticky;
+		align-self: flex-start;
+		top: 1rem;
+	}
+	.current {
+		position: sticky;
+		top: 10rem;
+		align-self: flex-start;
+		/* this padding is to make it even to the project blcok underline */
+		padding-bottom: calc(var(--font-size) / 8 + 1px);
 	}
 </style>
