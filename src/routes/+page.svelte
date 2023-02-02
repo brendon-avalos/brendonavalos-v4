@@ -153,9 +153,9 @@
 
 	.thumbnail_image_selector {
 		width: 100%;
-		-webkit-box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
-		-moz-box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
-		box-shadow: -9px 9px 54px -37px rgba(0, 0, 0, 0.28);
+		-webkit-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
 	}
 	.content_container {
 		grid-column: col-start 7 / span 6;
