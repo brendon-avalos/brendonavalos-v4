@@ -1,0 +1,32 @@
+:root {
+	--font-body: 'IBM Plex Serif', serif;
+	--color-bg-1: #ffffff;
+	--color-text: rgba(0, 0, 0, 1);
+	--font-size: min(max(1rem, 4vw), 18px);
+
+	/* to get the spacing unit to match the base font size */
+	--spacing-unit: min(max(1rem, 4vw), 18px);
+}
+
+body {
+	font-family: var(--font-body);
+	background-color: var(--color-bg-1);
+	color: var(--color-text);
+	padding: 1rem;
+	font-size: var(--font-size);
+}
+
+a {
+	color: inherit;
+}
+
+.body-1 {
+	font-size: min(max(1.5rem, 3vw), 32px);
+	font-weight: 300;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	gap: 20px;
+}
