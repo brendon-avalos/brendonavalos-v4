@@ -2,7 +2,7 @@
 	import '../styles/all.css';
 </script>
 
-<header class="text-1">
+<header>
 	<div class="name">Brendon Avalos</div>
 	<div class="links">
 		<a href="/">Work</a>, <a href="">Info</a>, <a href="">Office Hours</a>
@@ -23,5 +23,9 @@
 
 	header a {
 		text-decoration: none;
+	}
+
+	.links {
+		grid-column: col-start 7 / span 6;
 	}
 </style>

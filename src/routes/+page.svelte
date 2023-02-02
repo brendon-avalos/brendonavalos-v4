@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-	<div class="experience">Experience</div>
+	<div class="experience">Selected Work</div>
 </div>
 
 <div class="container project-container-spacing">
@@ -172,8 +172,8 @@
 
 	.experience {
 		justify-content: center;
-		margin-top: calc(var(--spacing-unit) * 6 - 28px);
-		margin-bottom: calc(var(--spacing-unit) * 6);
+		margin-top: calc(var(--spacing-unit) * 8 - 28px);
+		margin-bottom: calc(var(--spacing-unit) * 8);
 		grid-column: col-start 4 / span 2;
 		position: sticky;
 		align-self: flex-start;
