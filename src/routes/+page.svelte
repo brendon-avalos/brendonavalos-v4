@@ -7,9 +7,9 @@
 	<div class="content_container">
 		<div class="block">
 			<div class="body-1 intro ">
-				Hello and welcome to little corne of the internet. I'm a designer and strategic thinker who
-				enjoys collaborating, learning and laughing with other humans (live, laugh, love if you feel
-				me). Feel free to reach out and <span class="highlight"
+				Hello and welcome to my small corner of the internet. I'm a designer and strategic thinker
+				who enjoys collaborating, learning and laughing with other humans (live, laugh, love if you
+				feel me). Feel free to reach out and <span class="highlight"
 					><a
 						target="blank"
 						href="https://www.youtube.com/watch?v=QOddpk8jOtU&ab_channel=TheStreets"
