@@ -11,7 +11,7 @@
 			<div class="thumbnail_caption_title "><slot name="title" /></div>
 			<div class="thumbnail_caption_year"><slot name="year" /></div>
 		</div>
-		<div class="thumbnail_caption_link underline">
+		<div class="thumbnail_caption_link button-1">
 			<!-- conditional slot changing the link type based on the slot name -->
 			<slot name="link" />
 			{#if $$slots.visit}
@@ -19,7 +19,7 @@
 				<slot name="View" />
 			{/if}
 			{#if $$slots.view}
-				<div>Learn More</div>
+				<div>More</div>
 				<slot name="More" />
 			{/if}
 		</div>
@@ -49,11 +49,18 @@
 		justify-content: space-between;
 
 		padding: 0 calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3);
-		align-items: baseline;
+		align-items: flex-end;
 	}
 
 	.thumbnail_caption_text {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.thumbnail_caption_link {
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.5rem;
+		color: white;
+		background-color: var(--color-text);
 	}
 </style>

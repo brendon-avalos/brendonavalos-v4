@@ -48,8 +48,8 @@
 		<div class="block">
 			<div class="body-1  intro">
 				I am also starting <span class="highlight"><a href="/">Office Hours</a></span>. A way to
-				share what I've learned throughout my career and would love to help designers and companies
-				navigate the industry.
+				share what I've learned throughout my career to help designers and companies navigate the
+				industry.
 			</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<ProjectBlock>

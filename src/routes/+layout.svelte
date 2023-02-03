@@ -15,7 +15,17 @@
 	<slot />
 </main>
 
-<footer><div class="caption-1">All rights reserved. © Brendon Avalos, 2023</div></footer>
+<footer class="caption-1">
+	<div class="footer-links">
+		<div><a href="">Are.na</a></div>
+		<div><a href="">E-mail</a></div>
+		<div><a href="">LinkedIn</a></div>
+	</div>
+	<div class="copyright">
+		<div>All rights reserved.</div>
+		<div>© 2023 Brendon Avalos</div>
+	</div>
+</footer>
 
 <style>
 	header {
@@ -40,8 +50,23 @@
 	}
 	footer {
 		display: flex;
-		align-items: flex-end;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		gap: calc(var(--spacing-unit));
 		min-height: calc(var(--spacing-unit) * 12);
+		margin-bottom: calc(var(--spacing-unit) * 8);
+	}
+
+	.footer-links {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
 	}
 </style>
