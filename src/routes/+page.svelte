@@ -38,19 +38,7 @@
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="visit" />
-			</ProjectBlock>
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+						src="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
 					/></svelte:fragment
 				>
 				<span slot="visit" />
@@ -143,6 +131,7 @@
 
 	.thumbnail_image_selector {
 		width: 100%;
+		border-radius: 0.5rem;
 		-webkit-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
 		-moz-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
 		box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
