@@ -167,7 +167,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 4);
-		padding-bottom: calc(var(--spacing-unit) * 12);
+		padding-bottom: calc(var(--spacing-unit));
 	}
 
 	@media (min-width: 1600px) {
@@ -181,7 +181,7 @@
 	}
 
 	.project-container-spacing:first-child {
-		margin-top: calc(var(--spacing-unit) * 16);
+		margin-top: calc(var(--spacing-unit) * 8);
 	}
 
 	.subhead {

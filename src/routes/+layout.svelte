@@ -15,6 +15,8 @@
 	<slot />
 </main>
 
+<footer><div class="caption-1">All rights reserved. © Brendon Avalos, 2023</div></footer>
+
 <style>
 	header {
 		display: flex;
@@ -35,5 +37,11 @@
 
 	.links {
 		grid-column: col-start 7 / span 6;
+	}
+	footer {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		min-height: calc(var(--spacing-unit) * 12);
 	}
 </style>
