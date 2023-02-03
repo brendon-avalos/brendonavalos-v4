@@ -7,9 +7,15 @@
 	<div class="content_container">
 		<div class="block">
 			<div class="body-1 intro ">
-				Hello and welcome to my handcrafted internet space. I'm a designer and strategic thinker who
-				enjoys collaborating, learning and laughing with other humans (live, laugh, love if you feel
-				me). I'm always open to work with new people. Reach out and let's push things forward!
+				Hello and welcome to my handcrafted space on the internet. I'm a designer and strategic
+				thinker who enjoys collaborating, learning and laughing with other humans (live, laugh, love
+				if you feel me). Feel free to reach out and <span class="highlight"
+					><a
+						target="blank"
+						href="https://www.youtube.com/watch?v=QOddpk8jOtU&ab_channel=TheStreets"
+						>let's push things forward</a
+					></span
+				>.
 			</div>
 			<div class="subhead">Recent Work</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
@@ -53,9 +59,9 @@
 
 		<div class="block">
 			<div class="body-1  intro">
-				I am also starting “Office Hours”. I way to meet and help designers or new companies
-				navigate the industry. I’m happy to offer advice around process, careers, digital products,
-				and strategy.
+				I am also starting <span class="highlight"><a href="/">Office Hours</a></span>. A way to
+				share what I've learned throughout my career and would love to help designers and companies
+				navigate the industry.
 			</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<ProjectBlock>
@@ -79,9 +85,9 @@
 		<div class="block">
 			<div class="subhead">Before</div>
 			<div class="body-1 intro ">
-				Hello and welcome to my handcrafted internet space. I'm a designer and strategic thinker who
-				enjoys collaborating, learning and laughing with other humans (live, laugh, love if you feel
-				me). I'm always open to work with new people. Reach out and let's push things forward!
+				I also helped build a product design agency from the ground up with my friends at <span
+					class="highlight"><a href="https://www.garden3d.net/">Garden3d</a></span
+				>. I am proud that I helped foster a culture of trust and transparency within our team.
 			</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<ProjectBlock>
@@ -119,27 +125,6 @@
 					/></svelte:fragment
 				>
 				<span slot="visit" />
-			</ProjectBlock>
-		</div>
-
-		<div class="block">
-			<div class="body-1 intro">
-				I am also starting “Office Hours”. I way to meet and help designers or new companies
-				navigate the industry. I’m happy to offer advice around process, careers, digital products,
-				and strategy.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">A personal project to connect through the internet.</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
 			</ProjectBlock>
 		</div>
 	</div>
@@ -181,7 +166,7 @@
 	}
 
 	.project-container-spacing:first-child {
-		margin-top: calc(var(--spacing-unit) * 8);
+		margin-top: calc(var(--spacing-unit) * 16);
 	}
 
 	.subhead {
