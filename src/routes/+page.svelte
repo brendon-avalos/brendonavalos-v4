@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-	<div class="experience">Selected Work</div>
+	<div class="experience" />
 </div>
 
 <div class="container project-container-spacing">
@@ -19,7 +19,8 @@
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
 				<span slot="title">Studio Carbon Negative</span>
-				<span slot="year">2020</span>
+				<span slot="year">A website to celebrate our studio's commitment to carbon neutrality.</span
+				>
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
@@ -64,7 +65,9 @@
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
 				<span slot="title">Studio Carbon Negative</span>
-				<span slot="year">2020</span>
+				<span slot="year"
+					>Website for an independent platform that connects travel, culture and creativity.</span
+				>
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
@@ -158,7 +161,7 @@
 		box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
 	}
 	.content_container {
-		grid-column: col-start 7 / span 6;
+		grid-column: col-start 4 / span 6;
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 8);
@@ -166,7 +169,7 @@
 
 	@media (min-width: 1600px) {
 		.content_container {
-			grid-column: col-start 8 / span 5;
+			grid-column: col-start 4 / span 6;
 		}
 	}
 
@@ -174,12 +177,13 @@
 		justify-content: center;
 		margin-top: calc(var(--spacing-unit) * 8 - 28px);
 		margin-bottom: calc(var(--spacing-unit) * 8);
-		grid-column: col-start 4 / span 2;
+		grid-column: col-start 5 / span 4;
 		position: sticky;
 		align-self: flex-start;
 		top: 1rem;
 	}
 	.current {
+		display: none;
 		position: sticky;
 		top: 10rem;
 		align-self: flex-start;

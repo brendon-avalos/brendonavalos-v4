@@ -3,7 +3,9 @@
 </script>
 
 <header>
-	<div class="name">Brendon Avalos</div>
+	<div class="name">
+		<div class="name_name">Brendon Avalos</div>
+	</div>
 	<div class="links">
 		<a href="/">Work</a>, <a href="">Info</a>, <a href="">Office Hours</a>
 	</div>
@@ -19,6 +21,12 @@
 		justify-content: space-between;
 		position: sticky;
 		top: 1rem;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	header a {

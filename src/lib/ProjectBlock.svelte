@@ -8,10 +8,10 @@
 	</div>
 	<div class="thumbnail_caption">
 		<div class="thumbnail_caption_text">
-			<div class="thumbnail_caption_title"><slot name="title" /></div>
+			<div class="thumbnail_caption_title "><slot name="title" /></div>
 			<div class="thumbnail_caption_year"><slot name="year" /></div>
 		</div>
-		<div class="thumbnail_caption_Link underline">
+		<div class="thumbnail_caption_link underline">
 			<!-- conditional slot changing the link type based on the slot name -->
 			<slot name="link" />
 			{#if $$slots.visit}
@@ -27,23 +27,11 @@
 </div>
 
 <style>
-	.thumbnail_caption {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.thumbnail_caption_text {
-		display: flex;
-		gap: calc(var(--spacing-unit) * 1);
-		flex-direction: row;
-	}
-
 	.thumbnail {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--spacing-unit) * 1);
+		gap: calc(var(--spacing-unit) * 2);
 	}
 
 	.thumbnail_image {
@@ -53,5 +41,22 @@
 
 	.thumbnail_image_image {
 		padding: calc(var(--spacing-unit) * 3);
+	}
+
+	.thumbnail_caption {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.thumbnail_caption_text {
+		display: flex;
+		flex-direction: column;
+	}
+	.thumbnail_caption_title {
+		text-indent: 3rem;
+	}
+	.thumbnail_caption_year {
 	}
 </style>
