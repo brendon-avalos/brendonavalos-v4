@@ -155,7 +155,7 @@
 	}
 
 	.project-container-spacing:first-child {
-		margin-top: calc(var(--spacing-unit) * 16);
+		margin-top: 30vh;
 	}
 
 	.subhead {
