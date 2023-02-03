@@ -15,8 +15,8 @@
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
+				<span slot="title">Counter Situations</span>
+				<span slot="year">Design and development for a funky web archive.</span>
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
@@ -27,8 +27,8 @@
 			</ProjectBlock>
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
+				<span slot="title">Trippin</span>
+				<span slot="year">Design for a platform that connects travel, culture and creativity.</span>
 				<svelte:fragment slot="image"
 					><img
 						class="thumbnail_image_selector"
@@ -148,7 +148,7 @@
 <style>
 	.block {
 		display: grid;
-		gap: calc(var(--spacing-unit) / 2);
+		gap: calc(var(--spacing-unit));
 		place-items: center;
 	}
 
@@ -167,6 +167,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 4);
+		padding-bottom: calc(var(--spacing-unit) * 12);
 	}
 
 	@media (min-width: 1600px) {
