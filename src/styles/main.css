@@ -34,9 +34,8 @@ a {
 }
 
 .body-1 {
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 300;
-	text-indent: 3rem;
 }
 
 .caption-1 {
@@ -58,16 +57,12 @@ a {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(12, [col-start] 1fr);
+	grid-template-columns: repeat(8, [col-start] 1fr);
 	gap: 2rem;
-	max-width: 1600px;
+	max-width: 1200px;
 }
 
 .underline {
 	border-bottom: 1px solid currentColor;
 	padding-bottom: calc (1rem / 8);
-}
-
-.project-container-spacing {
-	margin-bottom: calc(var(--spacing-unit) * 12);
 }
