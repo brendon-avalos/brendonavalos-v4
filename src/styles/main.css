@@ -60,7 +60,6 @@ a {
 	display: grid;
 	grid-template-columns: repeat(12, [col-start] 1fr);
 	gap: 2rem;
-	max-width: 1600px;
 }
 
 .underline {

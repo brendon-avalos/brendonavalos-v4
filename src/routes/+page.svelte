@@ -161,7 +161,7 @@
 		box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
 	}
 	.content_container {
-		grid-column: col-start 4 / span 6;
+		grid-column: col-start 7 / span 6;
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 8);
@@ -169,7 +169,7 @@
 
 	@media (min-width: 1600px) {
 		.content_container {
-			grid-column: col-start 4 / span 6;
+			grid-column: col-start 8 / span 5;
 		}
 	}
 
