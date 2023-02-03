@@ -31,12 +31,12 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--spacing-unit) * 2);
+		background-color: var(--gray-50);
+		border-radius: 1rem;
 	}
 
 	.thumbnail_image {
 		width: 100%;
-		background-color: var(--gray-50);
 	}
 
 	.thumbnail_image_image {
@@ -47,16 +47,13 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
+		padding: 0 calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3);
 		align-items: baseline;
 	}
 
 	.thumbnail_caption_text {
 		display: flex;
 		flex-direction: column;
-	}
-	.thumbnail_caption_title {
-		text-indent: 3rem;
-	}
-	.thumbnail_caption_year {
 	}
 </style>
