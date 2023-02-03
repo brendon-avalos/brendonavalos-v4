@@ -14,11 +14,11 @@
 		<div class="thumbnail_caption_link button-1">
 			<!-- conditional slot changing the link type based on the slot name -->
 			<slot name="link" />
-			{#if $$slots.visit}
-				<div>Visit</div>
+			{#if $$slots.view}
+				<div>View</div>
 				<slot name="View" />
 			{/if}
-			{#if $$slots.view}
+			{#if $$slots.more}
 				<div>More</div>
 				<slot name="More" />
 			{/if}
@@ -58,9 +58,8 @@
 	}
 
 	.thumbnail_caption_link {
-		padding: 0.5rem 0.75rem;
+		padding: 0.35rem 0.75rem;
 		border-radius: 0.5rem;
-		color: white;
-		background-color: var(--color-text);
+		background-color: #e2e2e2;
 	}
 </style>

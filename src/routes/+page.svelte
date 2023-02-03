@@ -29,7 +29,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="visit" />
+				<span slot="view" />
 			</ProjectBlock>
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
@@ -41,7 +41,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="visit" />
+				<span slot="view" />
 			</ProjectBlock>
 		</div>
 
@@ -62,7 +62,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="view" />
+				<span slot="more" />
 			</ProjectBlock>
 		</div>
 	</div>
@@ -88,7 +88,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="visit" />
+				<span slot="view" />
 			</ProjectBlock>
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
@@ -100,7 +100,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="visit" />
+				<span slot="view" />
 			</ProjectBlock>
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
@@ -112,7 +112,7 @@
 						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 					/></svelte:fragment
 				>
-				<span slot="visit" />
+				<span slot="view" />
 			</ProjectBlock>
 		</div>
 	</div>
