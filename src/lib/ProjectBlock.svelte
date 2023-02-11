@@ -39,7 +39,7 @@
 		background: var(--gray-50);
 		border: 1px solid var(--color-primary);
 		padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3)
-			calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+			calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3);
 
 		overflow: hidden;
 	}
