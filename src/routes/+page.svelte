@@ -20,6 +20,7 @@
 			<div class="subhead">Recent Work</div>
 			<ProjectBlock
 				title="Manhattan Hydraulics"
+				year="2020"
 				description="I had the pleasure of working with the very talented team at Manhattan Hydraulics to start a product studio from the ground up. This position was a great growing experience for me."
 				url="https:hydraulics.nyc"
 				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"

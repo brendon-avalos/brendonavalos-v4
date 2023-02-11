@@ -47,7 +47,10 @@
 
 	.swiper img {
 		width: 100%;
-		border: 1px solid var(--color-primary);
+
+		-webkit-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
+		-moz-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
+		box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
 	}
 
 	.swiper-slide {

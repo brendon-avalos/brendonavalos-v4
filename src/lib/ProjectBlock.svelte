@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Slideshow from './Slideshow.svelte';
 
-	export let title, description, url, slide1, slide2, slide3;
+	export let title, description, url, slide1, slide2, slide3, year;
 </script>
 
 <div class="projectblock">
@@ -12,6 +12,7 @@
 		<div class="thumbnail_caption_text">
 			<div class="thumbnail_caption_header">
 				<div class="thumbnail_caption_title uppercase">{title}</div>
+				<div class="thumbnail_caption_year uppercase">{year}</div>
 			</div>
 			<div class="thumbnail_caption_year">
 				{description}
@@ -35,7 +36,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 3);
-		/* background: var(--gray-500); */
+		background: var(--gray-50);
 		border: 1px solid var(--color-primary);
 		padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3)
 			calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 3);
