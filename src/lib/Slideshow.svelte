@@ -2,30 +2,26 @@
 	export let slide1, slide2, slide3;
 	// import Swiper bundle with all modules installed
 	import Swiper from 'swiper/bundle';
+	// register Swiper custom elements
 	// import styles bundle
 	import 'swiper/css/bundle';
 
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		const swiper = new Swiper('.swiper', {
-			// Optional parameters
+	function initSwiper(node) {
+		var swiper = new Swiper(node, {
 			autoHeight: true,
+			loop: true,
 			spaceBetween: 300,
 			simulateTouch: true,
-			observeParents: true,
-			observer: true,
-			// If we need pagination
-
 			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
+				el: '.swiper-pagination'
 			}
 		});
-	});
+
+		swiper.slideNext();
+	}
 </script>
 
-<div class="swiper">
+<div class="swiper" use:initSwiper>
 	<!-- Additional required wrapper -->
 	<div class="swiper-wrapper">
 		<!-- Slides -->
@@ -43,7 +39,6 @@
 			<div class="swiper-nav-button swiper-button-prev" />
 			<div class="swiper-nav-button swiper-button-next" />
 		</div> -->
-
 		<div class="swiper-pagination" />
 	</div>
 </div>
@@ -56,6 +51,7 @@
 
 	.swiper img {
 		width: 100%;
+		height: 100%;
 
 		-webkit-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
 		-moz-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
@@ -67,7 +63,6 @@
 	}
 
 	.swiper-wrapper {
-		margin-bottom: calc(var(--spacing-unit) * 3);
 		overflow: visible;
 	}
 
@@ -78,6 +73,8 @@
 		background-color: white;
 	}
 	.swiper-elements {
+		margin-top: calc(var(--spacing-unit) * 3);
+		height: 2rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -105,5 +102,7 @@
 	.swiper-pagination {
 		position: relative;
 		width: auto;
+		bottom: auto;
+		top: auto;
 	}
 </style>
