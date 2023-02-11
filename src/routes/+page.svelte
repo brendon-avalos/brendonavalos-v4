@@ -14,12 +14,14 @@
 				></span
 			>.
 		</div>
-		<div class="subhead">Recent Work</div>
+
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<div class="block-group">
+			<div class="subhead">Recent Work</div>
 			<ProjectBlock
-				title="Manhattan"
-				description="Design for a platform that connects travel, culture and creativity."
+				title="Manhattan Hydraulics"
+				year="2020"
+				description="I had the pleasure of working with the very talented team at Manhattan Hydraulics to start a product studio from the ground up. This position was a great growing experience for me."
 				url="https:hydraulics.nyc"
 				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
 				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
@@ -53,11 +55,10 @@
 <style>
 	.block-group {
 		display: grid;
-		grid-row-gap: calc(var(--spacing-unit) * 1);
+		grid-row-gap: calc(var(--spacing-unit) * 4);
 	}
 
 	.content_container {
-		grid-column: col-start 2 / span 6;
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 6);
@@ -65,9 +66,6 @@
 	}
 
 	@media (min-width: 1600px) {
-		.content_container {
-			grid-column: col-start 2 / span 6;
-		}
 	}
 
 	.project-container-spacing {
@@ -79,8 +77,11 @@
 	}
 
 	.subhead {
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+		display: inline-flex;
+		text-transform: uppercase;
+	}
+
+	.intro {
+		text-indent: 6rem;
 	}
 </style>

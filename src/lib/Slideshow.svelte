@@ -47,11 +47,18 @@
 
 	.swiper img {
 		width: 100%;
-		box-shadow: 0 12px 50px -22px #0006;
-		border-radius: 0.5rem;
+
+		-webkit-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
+		-moz-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
+		box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
+	}
+
+	.swiper-slide {
+		overflow: visible;
 	}
 
 	.swiper-wrapper {
-		margin-bottom: calc(var(--spacing-unit) * 4);
+		margin-bottom: calc(var(--spacing-unit) * 3);
+		overflow: visible;
 	}
 </style>
