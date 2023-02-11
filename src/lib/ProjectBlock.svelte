@@ -1,28 +1,21 @@
+<script lang="ts">
+	export let title, description, url, projectimage, imagealt;
+</script>
+
 <div class="thumbnail">
 	<div class="thumbnail_image">
-		<!-- svelte-ignore a11y-missing-attribute -->
 		<div class="thumbnail_image_image">
-			<slot name="image" />
-			<!-- <img src="https://karalevich.com/rho.webp" /> -->
+			<img src={projectimage} alt={imagealt} />
 		</div>
 	</div>
 	<div class="thumbnail_caption">
 		<div class="thumbnail_caption_text">
-			<div class="thumbnail_caption_title "><slot name="title" /></div>
-			<div class="thumbnail_caption_year"><slot name="year" /></div>
+			<div class="thumbnail_caption_title ">{title}</div>
+			<div class="thumbnail_caption_year">{description}</div>
 		</div>
-		<div class="thumbnail_caption_link button-1">
-			<!-- conditional slot changing the link type based on the slot name -->
-			<slot name="link" />
-			{#if $$slots.view}
-				<div>View</div>
-				<slot name="View" />
-			{/if}
-			{#if $$slots.more}
-				<div>More</div>
-				<slot name="More" />
-			{/if}
-		</div>
+		<a href={url} target="blank">
+			<div class="thumbnail_caption_link button-1">Visit</div>
+		</a>
 	</div>
 </div>
 
@@ -36,6 +29,10 @@
 	}
 
 	.thumbnail_image {
+		width: 100%;
+	}
+
+	.thumbnail_image img {
 		width: 100%;
 	}
 

@@ -19,18 +19,13 @@
 			</div>
 			<div class="subhead">Recent Work</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Counter Situations</span>
-				<span slot="year">Design and development for a funky web archive.</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				projectimage="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				imagealt=""
+			/>
 			<ProjectBlock>
 				<!-- Using slots to reuse the components. The content structure for each block. -->
 				<span slot="title">Trippin</span>
