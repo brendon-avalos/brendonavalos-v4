@@ -6,15 +6,15 @@
 
 <div class="thumbnail">
 	<Slideshow {slide1} {slide2} {slide3} />
-	<div class="thumbnail_caption">
-		<div class="thumbnail_caption_text">
-			<div class="thumbnail_caption_title ">{title}</div>
-			<div class="thumbnail_caption_year">{description}</div>
-		</div>
-		<a href={url} target="blank">
-			<div class="thumbnail_caption_link button-1">Visit</div>
-		</a>
+</div>
+<div class="thumbnail_caption">
+	<div class="thumbnail_caption_text">
+		<div class="thumbnail_caption_title ">{title}</div>
+		<div class="thumbnail_caption_year">{description}</div>
 	</div>
+	<a href={url} target="blank">
+		<div class="thumbnail_caption_link button-1">Visit</div>
+	</a>
 </div>
 
 <style>
@@ -22,8 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--spacing-unit) * 3);
-		background-color: var(--gray-50);
-		border-radius: 1rem;
+		border: 1px solid black;
 		padding: calc(var(--spacing-unit) * 1);
 		min-width: 0;
 		overflow: hidden;

@@ -47,11 +47,16 @@
 
 	.swiper img {
 		width: 100%;
-		box-shadow: 0 12px 50px -22px #0006;
+		box-shadow: 0 4px 10px -10px #0006;
 		border-radius: 0.5rem;
+	}
+
+	.swiper-slide {
+		overflow: visible;
 	}
 
 	.swiper-wrapper {
 		margin-bottom: calc(var(--spacing-unit) * 4);
+		overflow: visible;
 	}
 </style>
