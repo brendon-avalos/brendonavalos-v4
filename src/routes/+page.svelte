@@ -86,16 +86,5 @@
 		text-indent: 6rem;
 	}
 
-	.highlight a {
-		text-decoration: none;
-		background-color: var(--secondary-color);
-		color: var(--highlight-color);
-		border-radius: 0.2rem;
-		padding: 0.1rem 0.5rem;
-		white-space: nowrap;
-		transition: all 0.6s ease-out;
-		-webkit-box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6);
-		-moz-box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6);
-		box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6);
-	}
+	
 </style>
