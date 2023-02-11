@@ -12,6 +12,7 @@
 			// Optional parameters
 			autoHeight: true,
 			spaceBetween: 300,
+			allowTouchMove: false,
 
 			// If we need pagination
 			pagination: {
@@ -24,7 +25,6 @@
 				prevEl: '.swiper-button-prev'
 			}
 		});
-		console.log(swiper.activeIndex);
 	});
 </script>
 
@@ -39,10 +39,16 @@
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<div class="swiper-slide"><img src={slide3} /></div>
 	</div>
-	<div class="swiper-pagination" />
-	<!-- If we need navigation buttons -->
-	<div class="swiper-button-prev" />
-	<div class="swiper-button-next" />
+
+	<div class="swiper-elements">
+		<!-- If we need navigation buttons -->
+		<div class="swiper-nav-container">
+			<div class="swiper-nav-button swiper-button-prev" />
+			<div class="swiper-nav-button swiper-button-next" />
+		</div>
+
+		<div class="swiper-pagination" />
+	</div>
 </div>
 
 <style>
@@ -66,5 +72,41 @@
 	.swiper-wrapper {
 		margin-bottom: calc(var(--spacing-unit) * 3);
 		overflow: visible;
+	}
+
+	.swiper-nav-button {
+		width: 2rem;
+		height: 2rem;
+		border: 1px solid var(--color-primary);
+		background-color: white;
+	}
+	.swiper-elements {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.swiper-nav-container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: calc(var(--spacing-unit) / 2);
+	}
+
+	.swiper-button-prev {
+		left: auto;
+		right: auto;
+		position: relative;
+	}
+	.swiper-button-next {
+		left: auto;
+		right: auto;
+		position: relative;
+	}
+
+	.swiper-pagination {
+		position: relative;
+		width: auto;
 	}
 </style>
