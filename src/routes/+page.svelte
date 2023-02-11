@@ -17,7 +17,9 @@
 
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<div class="block-group">
-			<div class="subhead">Recent Work</div>
+			<div class="subhead">
+				<div class="subhead-text">Recent Work</div>
+			</div>
 			<ProjectBlock
 				title="Manhattan Hydraulics Damn"
 				year="2020"
@@ -57,6 +59,8 @@
 	.block-group {
 		display: grid;
 		grid-row-gap: calc(var(--spacing-unit) * 4);
+		justify-content: center;
+		align-content: center;
 	}
 
 	.content_container {
@@ -78,13 +82,16 @@
 	}
 
 	.subhead {
-		display: inline-flex;
-		text-transform: uppercase;
+		display: flex;
+
+		justify-content: center;
+		align-content: center;
 	}
 
+	.subhead-text {
+		text-transform: uppercase;
+	}
 	.intro {
 		text-indent: 6rem;
 	}
-
-	
 </style>
