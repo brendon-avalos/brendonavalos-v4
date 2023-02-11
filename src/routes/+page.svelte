@@ -19,7 +19,7 @@
 		<div class="block-group">
 			<div class="subhead">Recent Work</div>
 			<ProjectBlock
-				title="Manhattan Hydraulics"
+				title="Manhattan Hydraulics Damn"
 				year="2020"
 				description="I had the pleasure of working with the very talented team at Manhattan Hydraulics to start a product studio from the ground up. This position was a great growing experience for me."
 				url="https:hydraulics.nyc"
