@@ -3,191 +3,94 @@
 	import ProjectBlock from '../lib/ProjectBlock.svelte';
 </script>
 
-<div class="container">
-	<div class="experience" />
-</div>
-
 <div class="container project-container-spacing">
-	<div class="current">Currently</div>
 	<div class="content_container">
-		<div class="block">
-			<div class="body-1 intro">
-				I am a designer at Fictive Kin. I contribute to both web & digital product projects for
-				businesses large and small. I also manage projects and develop internal processes.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Studio Carbon Negative</span>
-				<span slot="year">A website to celebrate our studio's commitment to carbon neutrality.</span
-				>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="visit" />
-			</ProjectBlock>
+		<div class="body-1 intro ">
+			Hello and welcome to my small corner of the internet. I'm a designer and strategic thinker who
+			enjoys collaborating, learning and laughing with other humans (live, laugh, love if you feel
+			me). Feel free to reach out and <span class="highlight"
+				><a target="blank" href="https://www.youtube.com/watch?v=QOddpk8jOtU&ab_channel=TheStreets"
+					>let's push things forward</a
+				></span
+			>.
 		</div>
 
-		<div class="block">
-			<div class="body-1 intro">
-				I am also starting “Office Hours”. I way to meet and help designers or new companies
-				navigate the industry. I’m happy to offer advice around process, careers, digital products,
-				and strategy.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">2023</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<div class="block-group">
+			<div class="subhead">Recent Work</div>
+			<ProjectBlock
+				title="Manhattan Hydraulics"
+				year="2020"
+				description="I had the pleasure of working with the very talented team at Manhattan Hydraulics to start a product studio from the ground up. This position was a great growing experience for me."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
 		</div>
-	</div>
-</div>
-<div class="container project-container-spacing">
-	<div class="current">Before</div>
-	<div class="content_container">
-		<div class="block">
-			<div class="body-1 intro">
-				I am a designer at Fictive Kin. I contribute to both web & digital product projects for
-				businesses large and small. I also manage projects and develop internal processes.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Studio Carbon Negative</span>
-				<span slot="year"
-					>Website for an independent platform that connects travel, culture and creativity.</span
-				>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="visit" />
-			</ProjectBlock>
+		<div class="body-1  intro">
+			I am also starting <span class="highlight"><a href="/">Office Hours</a></span>. A way to share
+			what I've learned throughout my career to help designers and companies navigate the industry.
+			Edit.
 		</div>
 
-		<div class="block">
-			<div class="body-1 intro">
-				I am also starting “Office Hours”. I way to meet and help designers or new companies
-				navigate the industry. I’m happy to offer advice around process, careers, digital products,
-				and strategy.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">2023</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">2023</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-		</div>
-
-		<div class="block">
-			<div class="body-1 intro">
-				I am also starting “Office Hours”. I way to meet and help designers or new companies
-				navigate the industry. I’m happy to offer advice around process, careers, digital products,
-				and strategy.
-			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">2023</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">2023</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-		</div>
+		<ProjectBlock
+			title="Manhattan"
+			description="Design for a platform that connects travel, culture and creativity."
+			url="https:hydraulics.nyc"
+			slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+			slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+			slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+		/>
 	</div>
 </div>
 
 <style>
-	.block {
+	.block-group {
 		display: grid;
-		gap: calc(var(--spacing-unit) * 3);
+		grid-row-gap: calc(var(--spacing-unit) * 4);
 	}
 
-	.thumbnail_image_selector {
-		width: 100%;
-		-webkit-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
-		-moz-box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
-		box-shadow: 0px 12px 50px -22px rgba(0, 0, 0, 0.4);
-	}
 	.content_container {
+
 		grid-column: col-start 7 / span 6;
+
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--spacing-unit) * 8);
+		gap: calc(var(--spacing-unit) * 6);
+		padding-bottom: calc(var(--spacing-unit));
 	}
 
 	@media (min-width: 1600px) {
+
 		.content_container {
 			grid-column: col-start 8 / span 5;
 		}
+
 	}
 
-	.experience {
-		justify-content: center;
-		margin-top: calc(var(--spacing-unit) * 8 - 28px);
-		margin-bottom: calc(var(--spacing-unit) * 8);
-		grid-column: col-start 5 / span 4;
-		position: sticky;
-		align-self: flex-start;
-		top: 1rem;
+	.project-container-spacing {
+		margin-top: calc(var(--spacing-unit) * 8);
 	}
-	.current {
-		display: none;
-		position: sticky;
-		top: 10rem;
-		align-self: flex-start;
-		/* this padding is to make it even to the project blcok underline */
-		padding-bottom: calc(var(--font-size) / 8 + 1px);
+
+	.project-container-spacing:first-child {
+		margin-top: 30vh;
+	}
+
+	.subhead {
+		display: inline-flex;
+		text-transform: uppercase;
+	}
+
+	.intro {
+		text-indent: 6rem;
 	}
 </style>
