@@ -11,8 +11,7 @@ html {
 	--gray-50: #f6f6f6;
 	--gray-500: #e2e7f2;
 	--highlight-color: #0031b0;
-	--secondary-color: #96a7ff;
-	--blue-200: rgba(0, 128, 245, 0.5);
+	--secondary-color: yellow;
 	--spacing-unit: 1rem;
 	/* to get the spacing unit to match the base font size */
 }
@@ -34,7 +33,7 @@ body {
 
 	/* 
 	swiper pagination */
-	--swiper-pagination-color: var(--color-primary);
+	--swiper-pagination-color: var(--secondary-color);
 	--swiper-pagination-left: auto;
 	--swiper-pagination-right: 8px;
 	--swiper-pagination-bottom: 8px;
@@ -100,7 +99,7 @@ a {
 
 .highlight a {
 	text-decoration: none;
-	background-color: yellow;
+	background-color: var(--secondary-color);
 	color: var(--highlight-color);
 	border-radius: 0.2rem;
 	padding: 0.1rem 0.5rem;
