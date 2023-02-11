@@ -11,13 +11,10 @@
 			autoHeight: true,
 			loop: true,
 			spaceBetween: 300,
-			simulateTouch: true,
 			pagination: {
 				el: '.swiper-pagination'
 			}
 		});
-
-		swiper.slideNext();
 	}
 </script>
 
