@@ -3,14 +3,14 @@ html {
 }
 
 :root {
-	--font-body: 'IBM Plex Serif', serif;
+	--font-body: 'Xanh Mono', serif;
 	--color-bg-1: #ffffff;
 	--color-text: rgba(0, 0, 0, 0.85);
 	--font-size: 1rem;
 	--color-primary: rgba(0, 0, 0, 1);
 	--gray-50: #f5f5f5;
-	--gray-500: #797979;
-	--highlight-color: #ced6ff;
+	--gray-500: #e2e7f2;
+	--highlight-color: #0031b0;
 	--secondary-color: #96a7ff;
 	--blue-200: rgba(0, 128, 245, 0.5);
 	/* to get the spacing unit to match the base font size */
@@ -18,7 +18,7 @@ html {
 	/* 
 	swiper dots */
 	--spacing-unit: 1rem;
-	--swiper-pagination-color: var(--gray-500);
+	--swiper-pagination-color: var(--highlight-color);
 	--swiper-pagination-left: auto;
 	--swiper-pagination-right: 8px;
 	--swiper-pagination-bottom: 8px;
@@ -55,8 +55,12 @@ a {
 	text-decoration: none;
 }
 
+.uppercase {
+	text-transform: uppercase;
+}
+
 .body-1 {
-	font-size: 1.65rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 }
 
@@ -73,22 +77,23 @@ a {
 }
 
 .container {
-	display: grid;
-	grid-template-columns: repeat(8, [col-start] 1fr);
+	display: flex;
+	flex-direction: column;
 	gap: 2rem;
-	max-width: 1080px;
+	max-width: 900px;
 }
 
 .underline {
 	border-bottom: 1px solid currentColor;
-	padding-bottom: calc (1rem / 8);
+	padding-bottom: calc (1rem / 20);
 }
 
 .highlight a {
 	text-decoration: none;
 	background-color: var(--highlight-color);
-	border-radius: 0.5rem;
-	padding: 0.1rem 0.75rem;
+	color: white;
+	border-radius: 0.2rem;
+	padding: 0.1rem 0.5rem;
 	white-space: nowrap;
 	transition: all 0.6s ease-out;
 }

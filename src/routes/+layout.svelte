@@ -4,7 +4,7 @@
 
 <header>
 	<div class="name">
-		<div class="name_name">Brendon Avalos</div>
+		<div class="name_name uppercase">Brendon Avalos</div>
 		<div class="name_description">Designer based in Los Angeles.</div>
 	</div>
 	<div class="links">
@@ -33,12 +33,13 @@
 		display: flex;
 		justify-content: flex-end;
 		position: sticky;
+		z-index: 1000;
 		top: 1rem;
 	}
 	main {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: center;
 	}
 
@@ -53,10 +54,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		align-items: center;
-		gap: calc(var(--spacing-unit));
+		align-items: flex-end;
+		gap: calc(var(--spacing-unit) / 2);
 		min-height: calc(var(--spacing-unit) * 12);
-		margin-bottom: calc(var(--spacing-unit) * 8);
 	}
 
 	.footer-links {

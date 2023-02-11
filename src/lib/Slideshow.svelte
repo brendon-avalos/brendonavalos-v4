@@ -47,8 +47,7 @@
 
 	.swiper img {
 		width: 100%;
-		box-shadow: 0 4px 10px -10px #0006;
-		border-radius: 0.5rem;
+		border: 1px solid var(--color-primary);
 	}
 
 	.swiper-slide {
@@ -56,7 +55,7 @@
 	}
 
 	.swiper-wrapper {
-		margin-bottom: calc(var(--spacing-unit) * 4);
+		margin-bottom: calc(var(--spacing-unit) * 3);
 		overflow: visible;
 	}
 </style>
