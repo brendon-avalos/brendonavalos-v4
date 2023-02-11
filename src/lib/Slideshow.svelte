@@ -11,17 +11,24 @@
 
 	onMount(() => {
 		const swiper = new Swiper('.swiper', {
+			spaceBetween: 300,
+			autoHeight: true,
+			centeredSlides: true,
 			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination'
-			},
-
-			// Navigation arrows
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			},
+			hashNavigation: {
+				watchState: true
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
 			}
 		});
+		swiper.loopDestroy();
+		swiper.loopCreate();
 	});
 </script>
 
@@ -29,24 +36,30 @@
 	<!-- Additional required wrapper -->
 	<div class="swiper-wrapper">
 		<!-- Slides -->
-		<div class="swiper-slide">{slide1}</div>
-		<div class="swiper-slide">{slide2}</div>
-		<div class="swiper-slide">{slide3}</div>
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<div class="swiper-slide"><img src={slide1} /></div>
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<div class="swiper-slide"><img src={slide2} /></div>
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<div class="swiper-slide"><img src={slide3} /></div>
 		...
 	</div>
-	<!-- If we need pagination -->
 	<div class="swiper-pagination" />
 
-	<!-- If we need navigation buttons -->
+	<!-- If we need pagination -->
 	<div class="swiper-button-prev" />
 	<div class="swiper-button-next" />
-
-	<!-- If we need scrollbar -->
-	<div class="swiper-scrollbar" />
 </div>
 
 <style>
 	.swiper {
 		width: 100%;
+		overflow: visible;
+	}
+
+	.swiper img {
+		width: 100%;
+		box-shadow: 0 12px 50px -22px #0006;
+		border-radius: 0.5rem;
 	}
 </style>
