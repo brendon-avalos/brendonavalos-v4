@@ -1,13 +1,11 @@
 <script lang="ts">
-	export let title, description, url, projectimage, imagealt;
+	import Slideshow from './Slideshow.svelte';
+
+	export let title, description, url;
 </script>
 
 <div class="thumbnail">
-	<div class="thumbnail_image">
-		<div class="thumbnail_image_image">
-			<img src={projectimage} alt={imagealt} />
-		</div>
-	</div>
+	<Slideshow slide1="Slide 1" slide2="Slide 2" slide3="Slide3" />
 	<div class="thumbnail_caption">
 		<div class="thumbnail_caption_text">
 			<div class="thumbnail_caption_title ">{title}</div>
@@ -29,10 +27,6 @@
 	}
 
 	.thumbnail_image {
-		width: 100%;
-	}
-
-	.thumbnail_image img {
 		width: 100%;
 	}
 
