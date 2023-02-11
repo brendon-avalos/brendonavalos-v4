@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div class="thumbnail">
 	<div class="thumbnail_image">
 		<!-- svelte-ignore a11y-missing-attribute -->
