@@ -11,17 +11,19 @@
 
 	onMount(() => {
 		const swiper = new Swiper('.swiper', {
-			spaceBetween: 300,
-			autoHeight: true,
-			centeredSlides: true,
-			// If we need pagination
+  // Optional parameters
 
-			pagination: {
-				el: '.swiper-pagination'
-			}
-		});
-		swiper.loopDestroy();
-		swiper.loopCreate();
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+
+
+
+});
+	
 	});
 </script>
 
@@ -37,6 +39,9 @@
 		<div class="swiper-slide"><img src={slide3} /></div>
 	</div>
 	<div class="swiper-pagination" />
+	  <!-- If we need navigation buttons -->
+
+
 </div>
 
 <style>
