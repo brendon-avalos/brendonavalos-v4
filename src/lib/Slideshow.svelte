@@ -15,16 +15,9 @@
 			autoHeight: true,
 			centeredSlides: true,
 			// If we need pagination
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			hashNavigation: {
-				watchState: true
-			},
+
 			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
+				el: '.swiper-pagination'
 			}
 		});
 		swiper.loopDestroy();
@@ -42,13 +35,8 @@
 		<div class="swiper-slide"><img src={slide2} /></div>
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<div class="swiper-slide"><img src={slide3} /></div>
-		...
 	</div>
 	<div class="swiper-pagination" />
-
-	<!-- If we need pagination -->
-	<div class="swiper-button-prev" />
-	<div class="swiper-button-next" />
 </div>
 
 <style>
@@ -61,5 +49,9 @@
 		width: 100%;
 		box-shadow: 0 12px 50px -22px #0006;
 		border-radius: 0.5rem;
+	}
+
+	.swiper-wrapper {
+		margin-bottom: calc(var(--spacing-unit) * 4);
 	}
 </style>

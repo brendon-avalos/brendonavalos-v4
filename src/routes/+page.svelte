@@ -27,18 +27,14 @@
 				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
 				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
 			/>
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Trippin</span>
-				<span slot="year">Design for a platform that connects travel, culture and creativity.</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
 		</div>
 
 		<div class="block">
@@ -47,19 +43,15 @@
 				share what I've learned throughout my career to help designers and companies navigate the
 				industry.
 			</div>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Office Hours</span>
-				<span slot="year">A personal project to connect through the internet.</span>
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170997/original_74b379e51b31264aa66d5f435e4af2ca.jpg?1675321071?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="more" />
-			</ProjectBlock>
+
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
 		</div>
 	</div>
 </div>
@@ -74,42 +66,31 @@
 				>. I am proud that I helped foster a culture of trust and transparency within our team.
 			</div>
 			<!-- svelte-ignore a11y-missing-attribute -->
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
-			<ProjectBlock>
-				<!-- Using slots to reuse the components. The content structure for each block. -->
-				<span slot="title">Recent Work</span>
-				<span slot="year" />
-				<svelte:fragment slot="image"
-					><img
-						class="thumbnail_image_selector"
-						src="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
-					/></svelte:fragment
-				>
-				<span slot="view" />
-			</ProjectBlock>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
+			<ProjectBlock
+				title="Manhattan"
+				description="Design for a platform that connects travel, culture and creativity."
+				url="https:hydraulics.nyc"
+				slidenumber="4"
+				slide1="https://d2w9rnfcy7mm78.cloudfront.net/20332515/original_e7170818a5383a8e912379574b1040cf.jpg?1676097344?bc=0"
+				slide2="https://d2w9rnfcy7mm78.cloudfront.net/20170975/original_7f953372f79f3bfb8e3cec4bb86ea4c9.png?1675320897?bc=0"
+				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
+			/>
 		</div>
 	</div>
 </div>

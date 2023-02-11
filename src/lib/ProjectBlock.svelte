@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Slideshow from './Slideshow.svelte';
 
-	export let title, description, url, slide1, slide2, slide3;
+	export let title, description, url, slide1, slide2, slide3, slide4, slide5;
 </script>
 
 <div class="thumbnail">
-	<Slideshow {slide1} {slide2} {slide3} />
+	<Slideshow {slide1} {slide2} {slide3} {slide4} {slide5} />
 	<div class="thumbnail_caption">
 		<div class="thumbnail_caption_text">
 			<div class="thumbnail_caption_title ">{title}</div>
@@ -22,9 +22,10 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		gap: calc(var(--spacing-unit) * 3);
 		background-color: var(--gray-50);
 		border-radius: 1rem;
-		padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3);
+		padding: calc(var(--spacing-unit) * 3);
 		min-width: 0;
 		overflow: hidden;
 	}
