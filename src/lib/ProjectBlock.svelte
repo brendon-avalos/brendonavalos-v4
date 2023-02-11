@@ -24,7 +24,7 @@
 		gap: calc(var(--spacing-unit) * 3);
 		background-color: var(--gray-50);
 		border-radius: 1rem;
-		padding: calc(var(--spacing-unit) * 3);
+		padding: calc(var(--spacing-unit) * 1);
 		min-width: 0;
 		overflow: hidden;
 	}
