@@ -1,29 +1,30 @@
 <script>
-	import { onMount } from 'svelte';
-
+	export let slide1, slide2, slide3;
 	// import Swiper bundle with all modules installed
 	import Swiper from 'swiper/bundle';
 
 	// import styles bundle
 	import 'swiper/css/bundle';
-
-	export let slide1, slide2, slide3;
+	import { onMount } from 'svelte';
 
 	onMount(() => {
 		const swiper = new Swiper('.swiper', {
-  // Optional parameters
+			// Optional parameters
+			autoHeight: true,
+			spaceBetween: 300,
 
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination'
+			},
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-
-
-
-});
-	
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		});
+		console.log(swiper.activeIndex);
 	});
 </script>
 
@@ -39,9 +40,9 @@
 		<div class="swiper-slide"><img src={slide3} /></div>
 	</div>
 	<div class="swiper-pagination" />
-	  <!-- If we need navigation buttons -->
-
-
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev" />
+	<div class="swiper-button-next" />
 </div>
 
 <style>
