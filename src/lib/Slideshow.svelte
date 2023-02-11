@@ -2,9 +2,9 @@
 	export let slide1, slide2, slide3;
 	// import Swiper bundle with all modules installed
 	import Swiper from 'swiper/bundle';
-
 	// import styles bundle
 	import 'swiper/css/bundle';
+
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -12,8 +12,7 @@
 			// Optional parameters
 			autoHeight: true,
 			spaceBetween: 300,
-			allowTouchMove: false,
-
+			simulateTouch: true,
 			// If we need pagination
 			pagination: {
 				el: '.swiper-pagination'
@@ -25,6 +24,11 @@
 				prevEl: '.swiper-button-prev'
 			}
 		});
+
+		console.log(swiper);
+
+		swiper.loopCreate();
+		swiper.loopDestroy();
 	});
 </script>
 
