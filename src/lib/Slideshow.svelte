@@ -13,22 +13,15 @@
 			autoHeight: true,
 			spaceBetween: 300,
 			simulateTouch: true,
+			observeParents: true,
+			observer: true,
 			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination'
-			},
 
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
 			}
 		});
-
-		console.log(swiper);
-
-		swiper.loopCreate();
-		swiper.loopDestroy();
 	});
 </script>
 
@@ -46,10 +39,10 @@
 
 	<div class="swiper-elements">
 		<!-- If we need navigation buttons -->
-		<div class="swiper-nav-container">
+		<!-- <div class="swiper-nav-container">
 			<div class="swiper-nav-button swiper-button-prev" />
 			<div class="swiper-nav-button swiper-button-next" />
-		</div>
+		</div> -->
 
 		<div class="swiper-pagination" />
 	</div>
@@ -87,7 +80,7 @@
 	.swiper-elements {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 	}
 
