@@ -45,11 +45,13 @@
 
 	header a {
 		text-decoration: none;
+		color: var(--color-primary);
 	}
 
 	.links {
 		grid-column: col-start 7 / span 6;
 	}
+
 	footer {
 		display: flex;
 		flex-direction: column;

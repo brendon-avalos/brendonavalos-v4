@@ -60,8 +60,13 @@ body::-webkit-scrollbar {
 }
 
 a {
-	color: inherit;
+	color: var(--highlight-color);
 	text-decoration: none;
+}
+
+a:hover {
+	background-color: var(--secondary-color);
+	color: var(--highlight-color);
 }
 
 .uppercase {
