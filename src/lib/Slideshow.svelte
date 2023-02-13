@@ -49,6 +49,7 @@
 	.swiper img {
 		width: 100%;
 		height: 100%;
+		
 
 		-webkit-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
 		-moz-box-shadow: 2px 22px 15px -11px rgba(0, 0, 0, 0.42);
