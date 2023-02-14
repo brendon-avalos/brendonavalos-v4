@@ -41,9 +41,9 @@ body {
 	--swiper-pagination-fraction-color: inherit;
 	--swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
 	--swiper-pagination-progressbar-size: 4px;
-	--swiper-pagination-bullet-size: 1rem;
-	--swiper-pagination-bullet-width: 1rem;
-	--swiper-pagination-bullet-height: 1rem;
+	--swiper-pagination-bullet-size: 0.5rem;
+	--swiper-pagination-bullet-width: 0.5rem;
+	--swiper-pagination-bullet-height: 0.5rem;
 	--swiper-pagination-bullet-inactive-color: transparent;
 	--swiper-pagination-bullet-inactive-opacity: 1;
 	--swiper-pagination-bullet-opacity: 1;
