@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-	--font-body: 'Xanh Mono', serif;
+	--font-body: 'arial', serif;
 	--color-bg-1: #ffffff;
 	--color-text: rgba(0, 0, 0, 0.85);
-	--font-size: 1rem;
+	--font-size: 0.8rem;
 	--color-primary: rgba(0, 0, 0, 1);
 	--gray-50: #f6f6f6;
 	--gray-500: #e2e7f2;
@@ -18,10 +18,10 @@ html {
 
 body {
 	font-family: var(--font-body);
-	line-height: 1.35;
+	line-height: 1.15;
 	background-color: var(--color-bg-1);
 	color: var(--color-text);
-	font-weight: 300;
+	font-weight: 400;
 	padding: 1rem 1.5rem;
 	font-size: var(--font-size);
 	scrollbar-width: none; /* Firefox */
@@ -74,7 +74,13 @@ a:hover {
 }
 
 .body-1 {
-	font-size: 1.8rem;
+	font-size: 1.25rem;
+	line-height: 1.25;
+	font-weight: 300;
+}
+
+.body-2 {
+	font-size: 1.2rem;
 	font-weight: 300;
 }
 
@@ -116,4 +122,8 @@ a:hover {
 	/* -webkit-box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6);
 	box-shadow: 2px 15px 15px -11px rgba(0, 0, 0, 0.6); */
+}
+
+.text-indent {
+	text-indent: 6rem;
 }

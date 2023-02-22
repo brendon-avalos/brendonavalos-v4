@@ -5,7 +5,7 @@
 
 <div class="container project-container-spacing">
 	<div class="content_container">
-		<div class="body-1 intro ">
+		<div class="body-1 intro text-indent">
 			Hello and welcome to my small corner of the internet. I'm a designer and strategic thinker who
 			enjoys collaborating, learning and laughing with other humans (live, laugh, love if you feel
 			me). Feel free to reach out and <span class="highlight"
@@ -38,7 +38,7 @@
 				slide3="https://d2w9rnfcy7mm78.cloudfront.net/20187542/original_7bcd5db1f370aa4adc17fc1f925ba579.png?1675400351?bc=0"
 			/>
 		</div>
-		<div class="body-1  intro">
+		<div class="body-1  intro text-indent">
 			I am also starting <span class="highlight"><a href="/">Office Hours</a></span>. A way to share
 			what I've learned throughout my career to help designers and companies navigate the industry.
 			Edit.
@@ -90,8 +90,5 @@
 
 	.subhead-text {
 		text-transform: uppercase;
-	}
-	.intro {
-		text-indent: 6rem;
 	}
 </style>
