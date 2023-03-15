@@ -5,7 +5,7 @@
 	</div>
 	<div class="links">
 		<a href="/">Work</a>,
-		<button on:click>Info</button>
+		<a href="/">Info</a>,
 		<a href="">Office Hours</a>
 	</div>
 </header>

@@ -21,7 +21,7 @@
 				<div class="subhead-text">Recent Work</div>
 			</div>
 			<ProjectBlock
-				title="Manhattan Hydraulics Damn"
+				title="Manhattan Hydraulics"
 				year="2020"
 				description="I had the pleasure of working with the very talented team at Manhattan Hydraulics to start a product studio from the ground up. This position was a great growing experience for me."
 				url="https:hydraulics.nyc"
@@ -58,7 +58,7 @@
 <style>
 	.block-group {
 		display: grid;
-		grid-row-gap: calc(var(--spacing-unit) * 4);
+		grid-row-gap: calc(var(--spacing-unit) * 2);
 		justify-content: center;
 		align-content: center;
 	}
@@ -66,7 +66,7 @@
 	.content_container {
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--spacing-unit) * 6);
+		gap: calc(var(--spacing-unit) * 2);
 		padding-bottom: calc(var(--spacing-unit));
 	}
 

@@ -35,7 +35,7 @@
 	.thumbnail {
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--spacing-unit) * 3);
+		gap: calc(var(--spacing-unit) * 1);
 		background: var(--gray-50);
 		border: 1px solid var(--color-primary);
 		padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 3)
@@ -50,7 +50,7 @@
 		justify-content: space-between;
 		align-items: baseline;
 		padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3)
-			calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+			calc(var(--spacing-unit) * 0) calc(var(--spacing-unit) * 3);
 	}
 	.thumbnail_caption_header {
 		display: flex;
